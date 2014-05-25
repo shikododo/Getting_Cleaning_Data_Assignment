@@ -46,4 +46,4 @@ colnames(tidy_data)[3:68] <- gsub("[()]","",colnames(tidy_data)[3:68])
 colnames(tidy_data)[63:68] <- gsub("^fBody","f",colnames(tidy_data)[63:68])
 colnames(tidy_data)[3:68] <- paste("mean_of_",colnames(tidy_data)[3:68],sep="")
 #write the final tidy file
-write.csv(tidy_data, "tidy_data.csv", quote=F, row.names=F)
+write.csv(tidy_data, "tidy_data.txt", quote=F, row.names=F)
